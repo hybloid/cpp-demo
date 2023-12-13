@@ -20,6 +20,7 @@ jobs:
           registry: registry.jetbrains.team
           username: ${{ secrets.SPACE_USERNAME }}
           password: ${{ secrets.SPACE_PASSWORD }}
+
       - name: 'Qodana Scan'
         uses: JetBrains/qodana-action@main
         with:
